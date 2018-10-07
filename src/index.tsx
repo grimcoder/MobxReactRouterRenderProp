@@ -25,7 +25,7 @@ class AppState {
 }
 
 @observer
-class TimerView extends React.Component<{appState: AppState}, {}> {
+class App extends React.Component<{appState: AppState}, {}> {
     componentDidMount(){
         setTimeout(()=>{
           this.props.appState.updateLoading(false)
@@ -58,4 +58,4 @@ const HOC = (props) => {
 
 const appState = new AppState();
 
-ReactDOM.render(<TimerView appState={appState} />, document.getElementById('root'));
+ReactDOM.render(<App appState={appState} />, document.getElementById('root'));

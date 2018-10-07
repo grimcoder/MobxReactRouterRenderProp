@@ -1,13 +1,14 @@
+
 {
   "compilerOptions": {
-    "target": "es5",
-    "removeComments": true,
-    "experimentalDecorators": true,
-    "jsx": "react",
-    "outDir": "dist"
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "experimentalDecorators": true,
+      "module": "commonjs",
+      "target": "es5",
+      "jsx": "react"
   },
-  "exclude": [
-    "node_modules",
-    "static"
+  "include": [
+      "./src/**/*"
   ]
 }
